@@ -62,11 +62,11 @@ describe('function weekFn', () => {
   });
 
   it('should return null if the number is 9', () => {
-    expect(weekFn(9)).toBe(null);
+    expect(weekFn(9)).toBeNull();
   });
 
   it('should return null if the number is 1.5', () => {
-    expect(weekFn(1.5)).toBe(null);
+    expect(weekFn(1.5)).toBeNull();
   });
 
   it('should return null if the number is string', () => {
@@ -74,15 +74,15 @@ describe('function weekFn', () => {
   });
 
   it('should return null if the number is undefined', () => {
-    expect(weekFn(undefined)).toBe(null);
+    expect(weekFn(undefined)).toBeNull();
   });
 
   it('should return null if the number is boolean', () => {
-    expect(weekFn(NaN)).toBe(null);
+    expect(weekFn(NaN)).toBeNull();
   });
 
   it('should return null in number is array or object', () => {
-    expect(weekFn([])).toBe(null);
+    expect(weekFn([])).toBeNull();
   });
 });
 
